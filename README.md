@@ -1,1 +1,1 @@
-# Data_Mining
+# Study of Data Mining
