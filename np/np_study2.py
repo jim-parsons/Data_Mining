@@ -4,6 +4,8 @@ import numpy as np
 # 'names', 'formats' 固定写法
 person_type = np.dtype({'names': ['name', 'age', 'chinese', 'math', 'english'],
                         'formats': ['S32', 'i', 'i', 'i', 'f']})
+# 中文为U32
+#
 
 peoples = np.array([("ZhangFei", 32, 75, 100, 90),
                     ("GuanYu", 24, 85, 96, 88.5),
