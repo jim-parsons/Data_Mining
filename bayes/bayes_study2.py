@@ -36,17 +36,17 @@ def load_data(path):
 
 def train(train_data, train_labels, test_data, test_labels):
     """
-    :param train_data:
-    :param train_labels:
-    :param test_data:
-    :param test_labels:
+    :param train_data: 训练数据
+    :param train_labels: 训练标签
+    :param test_data: 测试数据
+    :param test_labels: 测试标签
     :return:
     """
     # 计算矩阵
     # TfidfVectorizer用于计算单词的TF-IDF向量值
     # max_df描述单词在文档中最高出现率,这里设置0.5,代表一个单词在50%的文档中都出现了,那么他只携带非常少的信息,因而不做分词
     train_matrix = TfidfVectorizer(stop_words=STOP_WORDS, max_df=0.5)
-    # 模拟拟合,返回文本矩阵,表示每个单词在每个文档中的TF-IDF值
+    # 模拟拟合,返回分词权重,即特征矩阵,表示每个单词在每个文档中的TF-IDF值
     train_features = train_matrix.fit_transform(train_data)
 
     # 训练模型
