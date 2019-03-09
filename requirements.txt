@@ -1,3 +1,4 @@
+jieba
 nltk
 pandas
 absl-py==0.7.0
