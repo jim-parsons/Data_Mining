@@ -1,3 +1,4 @@
+nltk
 pandas
 absl-py==0.7.0
 astor==0.7.1
